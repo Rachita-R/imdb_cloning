@@ -1,15 +1,19 @@
-import Fruits from "./components/Fruits";
-import Fruit from "./components/Fruit";
-import Message from "./components/Message";
-import Hello from "./components/Hello";
-import Counter from "./components/Counter";
-import Form from "./components/Form";
-import UseEffectHook1 from "./components/UseEffectHook1";
+import Family from "./prop-drill/Family";
+import { FamilyContext } from "./prop-drill/FamilyContext"
+import './App.css'
+
 function App() {
+
+  const familyMessage = {
+    familyName: 'Darth Vaders'
+  }
+
   return (
-    <div>
-      <UseEffectHook1/>
-    </div>
+    <>
+      <FamilyContext.Provider value={familyMessage}>
+        <Family />
+      </FamilyContext.Provider>
+    </>
   );
 }
 
