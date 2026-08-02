@@ -44,7 +44,7 @@ A responsive clone of the IMDb website built using React. The project recreates 
 
 ---
 
-### 3. To-Do App
+### 3. To-Do List
 
 A simple and interactive task management application that helps users add, complete, and manage daily tasks.
 
